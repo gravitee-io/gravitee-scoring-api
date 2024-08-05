@@ -1,0 +1,4 @@
+= Gravitee.io - Scoring API
+
+== Description
+This repository contains the interfaces to implement a Scoring provider for Gravitee.io APIM.
