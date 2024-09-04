@@ -15,13 +15,14 @@
  */
 package io.gravitee.scoring.api.model.diagnostic;
 
+import io.gravitee.scoring.api.model.asset.AssetAnalyzed;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 import java.util.Collection;
 
 @Schema(description = "An object that represents the diagnostics for a specific asset.")
 public record AssetDiagnostic(
-    @Schema(description = "A string that contains the file path of the document that was analyzed.") String asset,
+    @Schema(description = "The document that was analyzed.") AssetAnalyzed asset,
     @Schema(description = "An array of diagnostic messages that represent the issues found in the asset.")
     Collection<Diagnostic> diagnostics
 )
