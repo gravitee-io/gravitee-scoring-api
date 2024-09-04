@@ -18,15 +18,11 @@ package io.gravitee.scoring.api.model.asset;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 
-/**
- * @author Remi Baptiste (remi.baptiste at graviteesource.com)
- * @author GraviteeSource Team
- */
-@Schema(description = "An object that represents an asset to be scored.")
-public record ScoreAsset(
-    AssetType type,
+@Schema(description = "An object that represents an analyzed asset.")
+public record AssetAnalyzed(
+    @Schema(description = "Id of the document to be analyzed.") String assetId,
+    @Schema(description = "Type of the document to be analyzed.") AssetType type,
     @Schema(description = "A string that contains the file name of the document to be analyzed.") String filename,
-    @Schema(description = "A string that contains the content of the document to be analyzed.") String content,
     ContentType contentType
 )
     implements Serializable {}
