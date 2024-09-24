@@ -25,4 +25,8 @@ import java.util.List;
  * @author GraviteeSource Team
  */
 @Schema(description = "An object that represents a request to score a list of assets.")
-public record ScoringRequest(List<AssetToAnalyze> assets) implements Serializable {}
+public record ScoringRequest(List<AssetToAnalyze> assets, List<String> customRulesets) implements Serializable {
+    public ScoringRequest(List<AssetToAnalyze> assets) {
+        this(assets, null);
+    }
+}
