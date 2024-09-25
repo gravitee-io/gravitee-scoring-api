@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.2.0...0.3.0) (2024-09-25)
+
+
+### Features
+
+* provide a list of custom rulesets to analyze assets ([a8ff057](https://github.com/gravitee-io/gravitee-scoring-api/commit/a8ff057e62b781cb8511b1ba00324072595b6b01))
+
 # [0.2.0](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.1.0...0.2.0) (2024-09-04)
 
 
