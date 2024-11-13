@@ -16,6 +16,7 @@
 package io.gravitee.scoring.api.model;
 
 import io.gravitee.scoring.api.model.asset.AssetToAnalyze;
+import io.gravitee.scoring.api.model.ruleset.CustomRuleset;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
 import java.util.List;
@@ -25,8 +26,18 @@ import java.util.List;
  * @author GraviteeSource Team
  */
 @Schema(description = "An object that represents a request to score a list of assets.")
-public record ScoringRequest(List<AssetToAnalyze> assets, List<String> customRulesets) implements Serializable {
+public record ScoringRequest(
+    List<AssetToAnalyze> assets,
+    @Deprecated(since = "0.4", forRemoval = true) List<String> customRulesets,
+    List<CustomRuleset> rulesets
+)
+    implements Serializable {
     public ScoringRequest(List<AssetToAnalyze> assets) {
-        this(assets, null);
+        this(assets, null, null);
+    }
+
+    @Deprecated(since = "0.4", forRemoval = true)
+    public ScoringRequest(List<AssetToAnalyze> assets, List<String> customRulesets) {
+        this(assets, customRulesets, null);
     }
 }

@@ -28,6 +28,11 @@ public record AssetToAnalyze(
     @Schema(description = "Type of the document to be analyzed.") AssetType type,
     @Schema(description = "A string that contains the file name of the document to be analyzed.") String filename,
     @Schema(description = "A string that contains the content of the document to be analyzed.") String content,
-    ContentType contentType
+    ContentType contentType,
+    @Schema(description = "The format of the asset content. Required only to analyze Gravitee API using custom rulesets") Format format
 )
-    implements Serializable {}
+    implements Serializable {
+    public AssetToAnalyze(String assetId, AssetType type, String filename, String content, ContentType contentType) {
+        this(assetId, type, filename, content, contentType, null);
+    }
+}
