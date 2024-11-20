@@ -16,9 +16,11 @@
 package io.gravitee.scoring.api.model;
 
 import io.gravitee.scoring.api.model.asset.AssetToAnalyze;
+import io.gravitee.scoring.api.model.functions.CustomFunction;
 import io.gravitee.scoring.api.model.ruleset.CustomRuleset;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -29,15 +31,16 @@ import java.util.List;
 public record ScoringRequest(
     List<AssetToAnalyze> assets,
     @Deprecated(since = "0.4", forRemoval = true) List<String> customRulesets,
-    List<CustomRuleset> rulesets
+    Collection<CustomRuleset> rulesets,
+    Collection<CustomFunction> functions
 )
     implements Serializable {
     public ScoringRequest(List<AssetToAnalyze> assets) {
-        this(assets, null, null);
+        this(assets, null, null, null);
     }
 
     @Deprecated(since = "0.4", forRemoval = true)
     public ScoringRequest(List<AssetToAnalyze> assets, List<String> customRulesets) {
-        this(assets, customRulesets, null);
+        this(assets, customRulesets, null, null);
     }
 }
