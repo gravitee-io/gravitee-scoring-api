@@ -15,16 +15,13 @@
  */
 package io.gravitee.scoring.api.model.diagnostic;
 
-import io.gravitee.scoring.api.model.asset.AssetAnalyzed;
 import io.swagger.v3.oas.annotations.media.Schema;
-import java.io.Serializable;
-import java.util.Collection;
+import java.util.List;
+import lombok.Builder;
 
-@Schema(description = "An object that represents the diagnostics for a specific asset.")
-public record AssetDiagnostic(
-    @Schema(description = "The document that was analyzed.") AssetAnalyzed asset,
-    @Schema(description = "An array of diagnostic messages that represent the issues found in the asset.")
-    Collection<Diagnostic> diagnostics,
-    @Schema(description = "An array of errors.") Collection<ScoringError> errors
-)
-    implements Serializable {}
+@Schema(description = "An object that represents an error in scoring process.")
+@Builder
+public record ScoringError(
+    @Schema(description = "Error code") String code,
+    @Schema(description = "Path in ruleset where error happen.") List<String> path
+) {}
