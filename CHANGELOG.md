@@ -1,3 +1,10 @@
+# [0.5.0](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.4.0...0.5.0) (2024-12-02)
+
+
+### Features
+
+* add error management ([55d8255](https://github.com/gravitee-io/gravitee-scoring-api/commit/55d8255960bf48a65f62002a4621e6207fd4d6a8))
+
 # [0.4.0](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.3.0...0.4.0) (2024-11-22)
 
 
