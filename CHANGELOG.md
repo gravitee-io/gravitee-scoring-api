@@ -1,3 +1,10 @@
+## [0.5.1](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.5.0...0.5.1) (2024-12-11)
+
+
+### Bug Fixes
+
+* implement Serializable for ScoringError record ([7b32cd5](https://github.com/gravitee-io/gravitee-scoring-api/commit/7b32cd52495167d937b2fe0f277f75a5cf66ef1a))
+
 # [0.5.0](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.4.0...0.5.0) (2024-12-02)
 
 
