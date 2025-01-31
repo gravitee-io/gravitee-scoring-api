@@ -26,7 +26,8 @@ import lombok.RequiredArgsConstructor;
 public enum Format {
     GRAVITEE_PROXY("gravitee_proxy"),
     GRAVITEE_MESSAGE("gravitee_message"),
-    GRAVITEE_FEDERATED("gravitee_federated");
+    GRAVITEE_FEDERATED("gravitee_federated"),
+    GRAVITEE_NATIVE("gravitee_native");
 
     @JsonValue
     final String value;
