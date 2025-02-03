@@ -1,3 +1,10 @@
+# [0.6.0](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.5.1...0.6.0) (2025-02-03)
+
+
+### Features
+
+* add native API format ([86d8b11](https://github.com/gravitee-io/gravitee-scoring-api/commit/86d8b11d8c1a56b643a44aa288d3221d1e19369a))
+
 ## [0.5.1](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.5.0...0.5.1) (2024-12-11)
 
 
