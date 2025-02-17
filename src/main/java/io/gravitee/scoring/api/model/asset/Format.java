@@ -20,14 +20,15 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.RequiredArgsConstructor;
 
 @Schema(
-    description = "An enum representing the format of the asset or ruleset. https://docs.stoplight.io/docs/spectral/e5b9616d6d50c-rulesets#formats"
+    description = "An enum representing the format when it’s not managed by spectral https://docs.stoplight.io/docs/spectral/e5b9616d6d50c-rulesets#formats"
 )
 @RequiredArgsConstructor
 public enum Format {
     GRAVITEE_PROXY("gravitee_proxy"),
     GRAVITEE_MESSAGE("gravitee_message"),
     GRAVITEE_FEDERATED("gravitee_federated"),
-    GRAVITEE_NATIVE("gravitee_native");
+    GRAVITEE_NATIVE("gravitee_native"),
+    GRAVITEE_V2("gravitee_v2");
 
     @JsonValue
     final String value;
