@@ -1,3 +1,10 @@
+# [0.7.0](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.6.0...0.7.0) (2025-02-19)
+
+
+### Features
+
+* create dedicated farmat for V2 APIs ([eb15d9b](https://github.com/gravitee-io/gravitee-scoring-api/commit/eb15d9bf47396c514228cfa862efd2c08053cc9b))
+
 # [0.6.0](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.5.1...0.6.0) (2025-02-03)
 
 
