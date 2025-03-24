@@ -33,7 +33,7 @@
     <name>Gravitee.io Scoring - API</name>
 
     <properties>
-        <gravitee-bom.version>8.2.21</gravitee-bom.version>
+        <gravitee-bom.version>8.2.22</gravitee-bom.version>
 
         <jakarata-ws.version>4.0.0</jakarata-ws.version>
         <swagger.version>2.2.30</swagger.version>
