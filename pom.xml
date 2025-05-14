@@ -36,7 +36,7 @@
         <gravitee-bom.version>8.3.0</gravitee-bom.version>
 
         <jakarata-ws.version>4.0.0</jakarata-ws.version>
-        <swagger.version>2.2.31</swagger.version>
+        <swagger.version>2.2.32</swagger.version>
     </properties>
 
     <dependencyManagement>
