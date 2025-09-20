@@ -35,8 +35,7 @@ public record Position(
         minimum = "0"
     )
     int character
-)
-    implements Serializable, Comparable<Position> {
+) implements Serializable, Comparable<Position> {
     private static final Comparator<Position> POSITION_COMPARATOR = Comparator.comparing(Position::line).thenComparing(Position::character);
 
     @Override

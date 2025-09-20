@@ -20,6 +20,7 @@ import java.util.regex.Pattern;
 
 public record CustomFunction(String filename, String content) {
     private static final Pattern FILENAME_PATTERN = Pattern.compile("^[^/]+.js$");
+
     public CustomFunction {
         Objects.requireNonNull(filename, "filename must not be null");
         Objects.requireNonNull(content, "content must not be null");

@@ -33,8 +33,7 @@ public record ScoringRequest(
     @Deprecated(since = "0.4", forRemoval = true) List<String> customRulesets,
     Collection<CustomRuleset> rulesets,
     Collection<CustomFunction> functions
-)
-    implements Serializable {
+) implements Serializable {
     public ScoringRequest(List<AssetToAnalyze> assets) {
         this(assets, null, null, null);
     }

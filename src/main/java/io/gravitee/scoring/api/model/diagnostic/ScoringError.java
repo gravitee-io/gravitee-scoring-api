@@ -25,5 +25,4 @@ import lombok.Builder;
 public record ScoringError(
     @Schema(description = "Error code") String code,
     @Schema(description = "Path in ruleset where error happen.") List<String> path
-)
-    implements Serializable {}
+) implements Serializable {}
