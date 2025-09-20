@@ -26,5 +26,4 @@ public record AssetDiagnostic(
     @Schema(description = "An array of diagnostic messages that represent the issues found in the asset.")
     Collection<Diagnostic> diagnostics,
     @Schema(description = "An array of errors.") Collection<ScoringError> errors
-)
-    implements Serializable {}
+) implements Serializable {}

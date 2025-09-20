@@ -42,10 +42,8 @@ public record Diagnostic(
         description = "A string that indicates the location within the analyzed document where the rule was triggered. It shows the \"path\" in the document structure to the issue."
     )
     String path
-)
-    implements Serializable, Comparable<Diagnostic> {
-    private static final Comparator<Diagnostic> DIAGNOSTIC_COMPARATOR = Comparator
-        .comparing(Diagnostic::range)
+) implements Serializable, Comparable<Diagnostic> {
+    private static final Comparator<Diagnostic> DIAGNOSTIC_COMPARATOR = Comparator.comparing(Diagnostic::range)
         .thenComparing(Diagnostic::severity)
         .thenComparing(Diagnostic::rule)
         .thenComparing(Diagnostic::message);

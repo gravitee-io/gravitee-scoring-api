@@ -29,8 +29,7 @@ public record ScoringResult(
     List<AssetDiagnostic> assetDiagnostics,
     @Schema(description = "A boolean that indicates whether the scoring operation was successful.") boolean success,
     @Schema(description = "A string that contains an error message if the scoring operation failed.") String error
-)
-    implements Serializable {
+) implements Serializable {
     public ScoringResult(List<AssetDiagnostic> assetDiagnostics) {
         this(assetDiagnostics, true, null);
     }
