@@ -1,3 +1,10 @@
+## [0.7.1](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.7.0...0.7.1) (2025-09-20)
+
+
+### Bug Fixes
+
+* reformat after update of prettier ([61296c8](https://github.com/gravitee-io/gravitee-scoring-api/commit/61296c861faf78084bfc8355d86b5bfb03d05f20))
+
 # [0.7.0](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.6.0...0.7.0) (2025-02-19)
 
 
