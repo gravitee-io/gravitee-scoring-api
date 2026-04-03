@@ -1,3 +1,13 @@
+# [1.0.0](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.7.1...1.0.0) (2026-04-03)
+
+
+* chore(deps)!: update io.gravitee:gravitee-parent to v24 ([fb59770](https://github.com/gravitee-io/gravitee-scoring-api/commit/fb597709effb765b9c9f9754c62bbe7cb9241c98))
+
+
+### BREAKING CHANGES
+
+* move to gravitee-parent 24 (use CustomLog)
+
 ## [0.7.1](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.7.0...0.7.1) (2025-09-20)
 
 
