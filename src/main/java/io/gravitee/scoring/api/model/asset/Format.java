@@ -20,7 +20,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.RequiredArgsConstructor;
 
 @Schema(
-    description = "An enum representing the format when it’s not managed by spectral https://docs.stoplight.io/docs/spectral/e5b9616d6d50c-rulesets#formats"
+    description = "An enum representing the format of an asset or custom ruleset. Matching formats determine which rulesets apply to which assets."
 )
 @RequiredArgsConstructor
 public enum Format {
@@ -28,7 +28,9 @@ public enum Format {
     GRAVITEE_MESSAGE("gravitee_message"),
     GRAVITEE_FEDERATED("gravitee_federated"),
     GRAVITEE_NATIVE("gravitee_native"),
-    GRAVITEE_V2("gravitee_v2");
+    GRAVITEE_V2("gravitee_v2"),
+    OPENAPI("openapi"),
+    ASYNCAPI("asyncapi");
 
     @JsonValue
     final String value;
