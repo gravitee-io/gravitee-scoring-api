@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/gravitee-io/gravitee-scoring-api/compare/1.0.0...1.0.1) (2026-09-18)
+
+
+### Bug Fixes
+
+* add OPENAPI and ASYNCAPI format values ([81cae91](https://github.com/gravitee-io/gravitee-scoring-api/commit/81cae91ddcf51da03924e02d36986e1f418dc849))
+
 # [1.0.0](https://github.com/gravitee-io/gravitee-scoring-api/compare/0.7.1...1.0.0) (2026-04-03)
 
 
