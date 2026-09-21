@@ -88,16 +88,6 @@
 
         <plugins>
             <plugin>
-                <groupId>com.hubspot.maven.plugins</groupId>
-                <artifactId>prettier-maven-plugin</artifactId>
-                <configuration>
-                    <inputGlobs>
-                        <inputGlob>src/{main,test}/java/**/*.java</inputGlob>
-                        <inputGlob>{.circleci,.github,src}/**/*.{json,yaml,yml}</inputGlob>
-                    </inputGlobs>
-                </configuration>
-            </plugin>
-            <plugin>
                 <groupId>io.swagger.core.v3</groupId>
                 <artifactId>swagger-maven-plugin-jakarta</artifactId>
                 <version>${swagger.version}</version>
